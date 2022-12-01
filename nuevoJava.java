@@ -15,12 +15,12 @@ public class Prueba {
     public static void main(String[] args) {
 
         while (true) {
-            int dado2 = (int) ((5) * Math.random() + 1.5);
-            Random dado1 = new Random();
+            Random dado1 = new Random(0,5);
+            Random dado2 = new Random(5,10);
+            Random dado3 = new Random(10,15);
             System.out.println(dado1.nextInt());
-            System.out.println(dado1.nextInt());
-            System.out.println(dado1.nextInt());
-            System.out.println(dado1.nextInt());
+            System.out.println(dado2.nextInt());
+            System.out.println(dado3.nextInt());
         }
     }
 }
